@@ -5,13 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <title>BookBar</title>
   </head>
   <body>
-    <header></header>
+    <header class="m-8">
+      <h1 class="text-3xl mb-2">BookBar</h1>
+      <p class="text-xl">Where Literary Excellence Meets Cocktail Delights</p>
+    </header>
 
-    <main></main>
+    <main>
+      <label class="relative inline-flex items-center cursor-pointer">
+        <input id="checkbox" value="" type="checkbox" class="sr-only peer" />
+        <div
+          class="w-11 h-6 bg-blue-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"
+        ></div>
+        <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300"
+          >Toggle me</span
+        >
+      </label>
+
+      <div id="book-container">hello</div>
+
+      <div class="hidden" id="drink-container">goodbye</div>
+    </main>
+
+    <footer></footer>
 
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <script src="./assets/js/switch.js"></script>
   </body>
 </html>
